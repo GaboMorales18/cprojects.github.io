@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regístrate | Code Projects</title>
+    <link rel="stylesheet" href="CSS/estilos_register.css">
+    <link rel="icon" href="SVG/icon_register.svg" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container_barra">
+            <div data-aos="fade-right">
+             <div class="container_logo">
+                <img src="SVG/svg_logo.svg" alt="logo de la empresa">
+                <h2 class="name_logo">Code Projects</h2>
+             </div>
+            </div>
+            <div data-aos="fade-down">
+                <div class="container_nav">
+                    <nav class="container_menu">
+                        <a href="index.html" class="item_nav">Inicio</a>
+                        <a href="we.html" class="item_nav">Nosotros</a>
+                        <a href="contact.html" class="item_nav">Contacto</a>
+                        <a href="login.html" class="item_nav">Inicia sesión</a>
+                        <a href="register.html" class="item_nav">Registrate</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div data-aos="fade-up" data-aos-duration="3000">
+        <form class="form" method="post">
+         <h2 class="form_title">Regístrate</h2>
+          <p class="form_paragraph">
+            ¿Ya tienes una cuenta? 
+            <a href="login.html" class="form_link">Entra aquí</a>
+          </p>
+          <div class="form_container">
+             <div class="form_group">
+              <input type="text" id="name" class="form_input" placeholder=" ">
+              <label for="name" class="form_label">Nombre:</label>
+              <span class="form_line"></span>
+             </div>
+             <div class="form_group">
+                <input type="number" id="number" class="form_input" placeholder=" ">
+                <label for="number" class="form_label">Telefono:</label>
+                <span class="form_line"></span>
+               </div>
+             <div class="form_group">
+              <input type="email" id="email" class="form_input" placeholder=" ">
+              <label for="email" class="form_label">Email:</label>
+              <span class="form_line"></span>
+             </div>
+             <div class="form_group">
+              <input type="password" id="password" class="form_input" placeholder=" ">
+              <label for="password" class="form_label">Contraseña:</label>
+              <span class="form_line"></span>
+             </div>
+            <input type="submit" class="form_submit" value="Registrarse">
+          </div>
+       </form>
+       </div>
+    </main>
+    <footer>
+        <div class="container_redes_sociales">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+              <a href="https://www.facebook.com/profile.php?id=100087058339428">
+                 <img src="SVG/facebook.svg" alt="">
+              </a>
+            </div>
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+              <a href="https://instagram.com/gabrielmorale18?igshid=ZDdkNTZiNTM=">
+                <img src="SVG/instagram.svg" alt="">
+              </a>
+            </div>
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+              <a href="https://www.tiktok.com/@gabomoralejo? t=8XYInHADNaP& r=1">
+                <img src="SVG/tictok.svg" alt="">
+              </a>
+            </div>
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+             <a href="#">
+                <img src="SVG/twitter.svg" alt="">
+             </a>
+            </div>
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+             <a href="https://walink.co/2c7c9e">
+                <img src="SVG/whatsapp.svg" alt="">
+             </a>
+            </div>
+        </div>
+         <div class="conatiner_derechos">
+             <h3 class="title_footer">&copy; Code Projects - Derechos reservados 2022</h3>
+         </div>
+    </footer>
+<script>AOS.init();</script>
+<script src="JS/main.js"></script>
+</body>
+</html>

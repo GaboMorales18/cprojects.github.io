@@ -1,0 +1,210 @@
+/* Selector Universal */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    color: #3B4343;
+} 
+
+/* Cuerpo de la Pagina */
+
+body{
+    background-color: #F6F6F6;
+}
+
+/* Cabezera de la Pagina */
+
+header{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    padding: 5px 10px;
+}
+
+/* Container Barra */
+
+.container_barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 5px 10px;
+
+    position:fixed;
+    transition:all 0.8s ease;
+	background:transparent;
+}
+.container_barra.active{
+    background-color: #F4F4F4;
+    z-index: 10;
+
+}
+/* Container Logo */
+
+.container_logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Nombre Logo */
+
+.name_logo{
+    font-size: 30px;
+}
+
+/* Container Menu */
+
+.container_menu{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 15px;
+}
+
+/* Item nav */
+
+.item_nav{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight:600;
+
+    --clipy:polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.item_nav::after{
+    content:"";
+	display:block;
+	background:#673132;
+	width:90%;
+	margin-top:3px;
+	height:3px;
+	transition:clip-path .4s;
+	
+	clip-path: var(--clipy);
+}
+
+.item_nav:hover{
+    --clipy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* Main de la pagina */
+
+main{
+    height: auto;
+    width: 100%;
+    margin-top: 60px;
+    padding: 25px 25px;
+}
+
+.section_one{
+    padding: 0 50px;
+}
+
+.title_text{
+    font-size: 25px;
+    text-align: center;
+}
+
+.sub_title_text{
+    font-size: 20px;
+    text-align: center;
+}
+
+.title_text + .sub_title_text{
+    line-height: 30px;
+}
+
+.paragraph{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+/* Container Container */
+
+.container_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.container_block{
+    display: flex;
+    flex-direction: column;
+    border: #673132 2px solid;
+    padding: 35px 35px;
+    border-radius: 10px;
+    box-shadow:1px 4px 9px 2px rgb(0 0 0 / 20%);
+}
+
+.container_block:hover{
+    padding: 38px 38px;
+    transition: all 0.5s ease;
+}
+
+.paragraph_title{
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #673132;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+.paragraph_title:hover{
+    background-color: #4B3167;
+}
+
+/* Conainer boton */
+
+.btn_suscribete_2{
+    background-color: #673132;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 16px;
+    border-radius: 35px;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    float: right;
+}
+
+.btn_suscribete_2:hover{
+    background-color: #4B3167;
+}
+/* footer de la Pagina*/
+
+footer{
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+}
+.container_redes_sociales{
+    background-color: #274848;
+    height: 130px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px 70px;
+}
+.conatiner_derechos{
+    background-color: #213F3F;
+    
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title_footer{
+    font-size: 16px;
+    color: #fff;    
+}
